@@ -104,5 +104,5 @@ if __name__ == "__main__":
 
     # Add a page/row/sample to database
     temp_dict = {"Model": "bert-base-uncased", "ppl": "5.21"}
-    properties = bot.dict2properties(temp_dict)
+    properties = bot.dict2properties(temp_dict, "Model")
     bot.create_page(database_id, properties)

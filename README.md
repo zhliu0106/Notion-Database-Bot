@@ -1,5 +1,7 @@
 # Notion Database Bot
 
+Notion-Database-Bot is a python tool for synchronizing data in Notion Database through Notion official api. The main purpose is to facilitate the recording of daily experimental data.
+
 ## Prerequisites
 
 1. [Create an integration](https://developers.notion.com/docs/getting-started#step-1-create-an-integration), then you can get your own Internal Integration Token (`token`).
@@ -30,10 +32,10 @@
 - Add a page/row/sample to database
   ```python
   temp_dict = {"Model": "bert-base-uncased", "ppl": "5.21"}
-  properties = bot.dict2properties(temp_dict)
+  properties = bot.dict2properties(temp_dict, "Model")
   bot.create_page(database_id, properties)
   ```
 
-### References:
+## References:
 - https://developers.notion.com/
 - https://prettystatic.com/notion-api-python/
