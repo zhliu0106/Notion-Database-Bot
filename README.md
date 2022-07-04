@@ -27,6 +27,7 @@ pip install notion-database-bot
 
 - Init your Bot:
   ```python
+  from notion-database-bot import NotionDatabaseBot
   bot = NotionDatabaseBot(token)
   ```
 

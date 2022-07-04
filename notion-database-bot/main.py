@@ -1,5 +1,3 @@
-# Based on https://prettystatic.com/notion-api-python/
-
 import requests, json
 
 
@@ -9,7 +7,6 @@ class NotionDatabaseBot:
     def __init__(self, token: str):
         """
         Init an Notion Database Bot object.
-
         Parameters:
             - token: Internal Integration Token
         """
@@ -19,7 +16,6 @@ class NotionDatabaseBot:
     def read_database(self, database_id: str):
         """
         Read Notion Database content.
-
         Parameters:
             - database_id: Notion Database ID
         """
@@ -35,7 +31,6 @@ class NotionDatabaseBot:
     def create_page(self, database_id, properties):
         """
         Create a new page/row/sample in Notion Database.
-
         Parameters:
             - database_id: Notion Database ID
             - properties: Notion Database Property object (dict), refer to https://developers.notion.com/reference/property-object
@@ -57,7 +52,6 @@ class NotionDatabaseBot:
     def update_page(self, page_id, properties):
         """
         Update page/row/sample content stored in Notion Database.
-
         Parameters:
             - page_id: Notion Page ID
             - properties: Notion Database Property object (dict), refer to https://developers.notion.com/reference/property-object
@@ -77,7 +71,6 @@ class NotionDatabaseBot:
     def dict2properties(src_dict: dict, title_key: str = None):
         """
         Turn a dict to Property object.
-
         Parameters:
             - src_dict: Source dict, contains a title key/value pair and other properties key/value pairs.
             - title_key: Title key string.
