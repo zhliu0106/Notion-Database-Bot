@@ -43,6 +43,24 @@ pip install notion-database-bot
   bot.create_page(database_id, properties)
   ```
 
-## References:
+## Example
+
+Suppose we have created a Table named "Test":
+
+![](imgs/1.png)
+
+Init a bot object, and read the content:
+
+![](imgs/2.png)
+
+Upload new data to the Table:
+
+![](imgs/3.png)
+
+Look back at the Table:
+
+![](imgs/4.png)
+
+## References
 - https://developers.notion.com/
 - https://prettystatic.com/notion-api-python/
